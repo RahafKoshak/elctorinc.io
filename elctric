@@ -1,0 +1,27 @@
+// C++ code
+//
+int i = 0;
+
+int B = 0;
+
+int j = 0;
+
+void setup()
+{
+  pinMode(9, OUTPUT);
+}
+
+void loop()
+{
+  for (B = 0; B <= 255; B += 1) {
+    analogWrite(9, B);
+    delay(30); // Wait for 30 millisecond(s)
+  }
+  for (B = 255; B >= 0; B -= 1) {
+    analogWrite(9, B);
+    delay(30); // Wait for 30 millisecond(s)
+  }
+}
+
+
+"C:\Users\rahaf\OneDrive\الصور\لقطات الشاشة\2022-08-24 (1).png"
